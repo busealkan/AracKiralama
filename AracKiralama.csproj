@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A609C8EF-66AE-4210-850B-AAAD0888B81C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AracKiralama</RootNamespace>
+    <AssemblyName>AracKiralama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Permissions.5.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAnaSayfa.Designer.cs">
+      <DependentUpon>formAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formArac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formArac.Designer.cs">
+      <DependentUpon>formArac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAyarlar.Designer.cs">
+      <DependentUpon>formAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formFiyat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formFiyat.Designer.cs">
+      <DependentUpon>formFiyat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMarka.Designer.cs">
+      <DependentUpon>formMarka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formModel.Designer.cs">
+      <DependentUpon>formModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMusteri.Designer.cs">
+      <DependentUpon>formMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRezervasyon.designer.cs">
+      <DependentUpon>formRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSatis.designer.cs">
+      <DependentUpon>formSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSifreGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSifreGuncelle.Designer.cs">
+      <DependentUpon>formSifreGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sınıflar\Varliklar\Arac.cs" />
+    <Compile Include="Sınıflar\Varliklar\Calisan.cs" />
+    <Compile Include="Sınıflar\Varliklar\Fiyat.cs" />
+    <Compile Include="Sınıflar\Varliklar\Fotograflar.cs" />
+    <Compile Include="Sınıflar\Varliklar\Login.cs" />
+    <Compile Include="Sınıflar\Varliklar\Marka.cs" />
+    <Compile Include="Sınıflar\Varliklar\Model.cs" />
+    <Compile Include="Sınıflar\Varliklar\Musteri.cs" />
+    <Compile Include="Sınıflar\Varliklar\Rezervasyon.cs" />
+    <Compile Include="Sınıflar\Veritabanı\AracVeritabani.cs" />
+    <Compile Include="Sınıflar\Veritabanı\CalisanVeritabani.cs" />
+    <Compile Include="Sınıflar\Veritabanı\FiyatVeritabani.cs" />
+    <Compile Include="Sınıflar\Veritabanı\FotograflarVeritabani.cs" />
+    <Compile Include="Sınıflar\Veritabanı\MaillMessage.cs" />
+    <Compile Include="Sınıflar\Veritabanı\MarkaVeritabani.cs" />
+    <Compile Include="Sınıflar\Veritabanı\ModelVeritabani.cs" />
+    <Compile Include="Sınıflar\Veritabanı\MusteriVeritabani.cs" />
+    <Compile Include="Sınıflar\Veritabanı\RezervasyonVeritabani.cs" />
+    <Compile Include="Sınıflar\Veritabanı\TemelVeritabani.cs" />
+    <EmbeddedResource Include="formAnaSayfa.resx">
+      <DependentUpon>formAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formArac.resx">
+      <DependentUpon>formArac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAyarlar.resx">
+      <DependentUpon>formAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formFiyat.resx">
+      <DependentUpon>formFiyat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMarka.resx">
+      <DependentUpon>formMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formModel.resx">
+      <DependentUpon>formModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMusteri.resx">
+      <DependentUpon>formMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRezervasyon.resx">
+      <DependentUpon>formRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSatis.resx">
+      <DependentUpon>formSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSifreGuncelle.resx">
+      <DependentUpon>formSifreGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
